@@ -1,0 +1,44 @@
+
+<!--Se crea una div llamada parent para insertar forma de ingreso-->
+
+
+   <div class="parent">
+    <div class="card">
+        <h2>Login Form</h2>
+     
+            <!-- se nombran las classes para poder estilizar en css-->
+        <div class="login_register">
+            <a href="
+    
+     " class="login" target="blank">Login</a>
+            <a href="
+            
+     " class="register" target="blank">Signup</a>
+        </div>
+     
+            <!-- formulario de log in -->
+                         <!-- Se conecta la forma con  [(ngModel)]="loginObj.EmailId" and [(ngModel)]="loginObj.Password"-->
+
+
+        <form class="form">
+            <input type="email" name="EmailId" [(ngModel)]="loginObj.EmailId" placeholder="Email Adress" class="email">
+            <input type="password" name="Password" [(ngModel)]="loginObj.Password" placeholder="password" class="pass">
+        </form>
+     
+            <!-- classe de olvido de contrasena-->
+        <a href="#" class="fp">Forgot password?</a>
+     
+            <!-- Crear funcion  onLogin en el componente de login-->
+            <button type="button" (click)="onLogin()" class="login_btn">Login</button>
+     
+            <!-- footer de tarjeta -->
+        <div class="footer_card">
+        <p>Not a member?</p>
+        <a href="src/app/pages/sign-up/sign-up.component.html ">Singup now</a>
+        </div>
+     </div>
+        
+   </div>
+
+  
+

@@ -1,0 +1,39 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- logo -->
+    <a class="navbar-brand" href="#">Logo</a>
+
+    <!-- Toggler para pantallas chicas-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- contenido colapsable -->
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <!-- alinear nav a la izquierda -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <!-- buscar en forma -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+
+      <!-- implementacion funcion de onLogout para salir y borrar session en local storage de token  -->
+      <button class="btn btn-outline-danger" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
