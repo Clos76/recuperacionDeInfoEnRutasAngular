@@ -175,10 +175,10 @@ return false;
 
 ## Estructura de Proyecto 
 
-# /src /app /guard # Este es el archivo de auth.guard.ts que incluye la verificacion si el token JWT esta en el local storage. Si no está, se redirige el usuario a la página de login. 
+* /src /app /guard # Este es el archivo de auth.guard.ts que incluye la verificacion si el token JWT esta en el local storage. Si no está, se redirige el usuario a la página de login. 
 
-# /src /app /pages/login # Este es el archivo que contiene el componente inicial de login. Contiene la página con el formulario de html y css. 
+* /src /app /pages/login # Este es el archivo que contiene el componente inicial de login. Contiene la página con el formulario de html y css. 
 
-# /src /app /pages/layout# Este es el archivo que contiene el componente de layout el cual es mostrado sólo si el usuario ingresa correctamente sus datos en la página login. Aquí puede salir de cession. 
+* /src /app /pages/layout# Este es el archivo que contiene el componente de layout el cual es mostrado sólo si el usuario ingresa correctamente sus datos en la página login. Aquí puede salir de cession. 
 
-# /src /app /pages/dashboard # Esta es la ruta que es permitida si el usuario ingresa correctamente los datos. Se implementó el uso de un template para simular un ingreso a un perfil de un usuario. 
+* /src /app /pages/dashboard # Esta es la ruta que es permitida si el usuario ingresa correctamente los datos. Se implementó el uso de un template para simular un ingreso a un perfil de un usuario. 
